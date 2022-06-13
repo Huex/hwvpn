@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="$(RealCodeDirectory)\$(AppSubDir)App.xaml" Condition="Exists('$(RealCodeDirectory)\$(AppSubDir)App.xaml')">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <None Include="$(RealCodeDirectory)\App.config" Condition="Exists('$(RealCodeDirectory)\App.config')" />
+
+    <Compile Include="$(RealCodeDirectory)\**\*.cs" Exclude="$(RealCodeDirectory)\obj\**\*.cs;$(RealCodeDirectory)\**\*.Designer.cs" DependentUpon="$if$ (Exists(%(Filename))) %(Filename) $endif$">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+    <Page Include="$(RealCodeDirectory)\**\*.xaml" Exclude="$(RealCodeDirectory)\$(AppSubDir)App.xaml">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <AppDesigner Include="$(RealCodeDirectory)\Properties\" />
+  </ItemGroup>
+</Project>

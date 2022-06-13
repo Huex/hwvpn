@@ -1,3 +1,5 @@
+using System;
+
 namespace HWVPN.BlazorWeb.Data
 {
     public class WeatherForecast

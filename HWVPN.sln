@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{D14A859D-7132-474E-972A-9E2B2E5E5B17}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Utils.props = Utils.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWVPN.BlazorWeb", "HWVPN.BlazorWeb\HWVPN.BlazorWeb.csproj", "{534086BD-9FF1-44B1-93A5-A0DD891E0692}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{534086BD-9FF1-44B1-93A5-A0DD891E0692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534086BD-9FF1-44B1-93A5-A0DD891E0692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534086BD-9FF1-44B1-93A5-A0DD891E0692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534086BD-9FF1-44B1-93A5-A0DD891E0692}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50492412-836B-4945-B2DC-A59466322BD6}
+	EndGlobalSection
+	GlobalSection(RiderSharedRunConfigurations) = postSolution
+		File = hwvpn.local.run\hwvpn.local.run.xml
+	EndGlobalSection
+EndGlobal
